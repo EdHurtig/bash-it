@@ -22,7 +22,7 @@ __kitchen_options () {
       return 0
       ;;
     *)
-      COMPREPLY=( $(compgen -W "console converge create destroy driver help init list login setup test verify version"  -- ${cur} ))
+      COMPREPLY=( $(compgen -W "cloud local console converge create destroy driver help init list login setup test verify version"  -- ${cur} ))
       return 0
       ;;
   esac
