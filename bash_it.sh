@@ -39,11 +39,12 @@ source "${BASH_IT}/themes/colors.theme.bash"
 source "${BASH_IT}/themes/base.theme.bash"
 
 # library
-LIB="${BASH_IT}/lib/*.bash"
-for config_file in $LIB
+LIB="${BASH_IT}/lib/"
+for config_file in "$LIB"*.bash
 do
-  source $config_file
+  source "$config_file"
 done
+
 
 # Load enabled aliases, completion, plugins
 for file_type in "aliases" "completion" "plugins"
