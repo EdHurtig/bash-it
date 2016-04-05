@@ -15,7 +15,9 @@ capture() {
 }
 
 alias trash="rmtrash"
-
+alias serve='python -m SimpleHTTPServer'
 alias sourcetree='open -a SourceTree'
 alias stree=sourcetree
-eval $(thefuck --alias)
+if [ `which thefuck` ]; then
+  eval $(thefuck --alias)
+fi
