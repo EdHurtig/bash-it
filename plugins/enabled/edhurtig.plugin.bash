@@ -1,0 +1,1 @@
+../available/edhurtig.plugin.bash
