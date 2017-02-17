@@ -38,8 +38,4 @@ if [ `which thefuck` ]; then
   eval $(thefuck --alias)
 fi
 
-for f in ~/.bashrc_*; do 
-  source $f
-done
-
 export CFLAGS="-Wall"
